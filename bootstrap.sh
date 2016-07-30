@@ -17,7 +17,7 @@ sudo rm -f /etc/nginx/sites-enabled/default \
 && sudo tee /etc/nginx/sites-available/dotafanwars_static > /dev/null <<EOF
 server {
   listen ${DFWS_PORT};
-  root ${projectDir}/build;
+  root ${projectDir};
   index index.html;
   server_name ${DFWS_HOST};
   sendfile ${sendfileStatus};
